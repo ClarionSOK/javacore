@@ -1,6 +1,6 @@
-package com.kitcenter.runners.classwork.lesson3;
+package com.kitcenter.runners.classwork.lesson4;
 
-import com.kitcenter.app.classwork.lesson3.NarrowingCasting;
+import com.kitcenter.app.classwork.lesson4.NarrowingCasting;
 
 /**
  * Created by dell on 13.03.2018.
