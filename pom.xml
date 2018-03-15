@@ -13,23 +13,19 @@
   <name>javacore</name>
   <url>http://maven.apache.org</url>
   <dependencies>
+    <!-- https://mvnrepository.com/artifact/junit/junit -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>4.12</version>
+      <scope>test</scope> <!-- Learn about it -->
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/pl.pragmatists/JUnitParams -->
+    <dependency>
+      <groupId>pl.pragmatists</groupId>
+      <artifactId>JUnitParams</artifactId>
+      <version>1.1.1</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
-
-
-  <profiles>
-    <profile>
-      <id>chrome</id>
-      <properties>
-          <browsername>chrome</browsername>
-      </properties>
-    </profile>
-  </profiles>
-
-
 </project>
