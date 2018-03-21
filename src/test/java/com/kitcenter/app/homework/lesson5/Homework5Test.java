@@ -5,13 +5,15 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 import static org.junit.Assert.*;
 
 public class Homework5Test {
     private static int s1;
     private static int s2;
-    @Test
+    @Test //3 теста вычитаний
     public void substractionTest1 (){
         int s1 = 80;
         int s2 = 70;
@@ -41,7 +43,7 @@ public class Homework5Test {
         assertTrue(actRes < 0);
     }
 
-    @Test
+    @Test // 3 теста сложений
     public  void additionTest1(){
         double a1 = 19.1;
         int a2 = 11;
@@ -66,7 +68,7 @@ public class Homework5Test {
 
     }
 
-    @Test
+    @Test // 3 теста деления
     public void divisionTest1(){
         int d1 = 3;
         int d2 = 10;
@@ -92,7 +94,7 @@ public class Homework5Test {
         Assert.assertEquals(actRes, actRes2);
 
     }
-    @Test
+    @Test // 3 теста умноения
     public  void multiplyTest1(){
         int m1 = 11;
         int expRes = 121;
@@ -115,7 +117,28 @@ public class Homework5Test {
         double actRes = Homework5.multiply(m1, 2);
         assertTrue(actRes > 0);
         Assert.assertEquals(expRes, actRes, 0);
-
-
+    }
+    @Test
+    public void resultsArrayTest(){
+        Assert.assertNotNull(Homework5.results);
+        String expRes = "[32.0, 110.7, 100.0, 24.6]";
+        String actRes = Arrays.toString(Homework5.results);
+        Assert.assertEquals(actRes, expRes);
+    }
+    @Test
+    public void sumTest(){
+        Assert.assertTrue(Homework5.sum > 0);
+        Assert.assertTrue(Homework5.sum >= (32.0 + 110.7 + 100 + 24.6));
+    }
+    @Test
+    public void resultMultiplicationTest(){
+        double expRes = 8714304.0;
+        double actRes = Homework5.resultMultiplication;
+        Assert.assertEquals(actRes,expRes, 0);
+    }
+    @Test
+    public void formulaTest(){
+        Assert.assertTrue(Homework5.someFormula > 4541);
+        Assert.assertTrue(Homework5.ams < Homework5.someFormula);
     }
 }
