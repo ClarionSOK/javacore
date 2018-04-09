@@ -1,6 +1,9 @@
 package com.kitcenter.app.homework.lesson8;
 
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class ArrayPlayground {
     public static void evenNumbers(){
         int[] evenArray = {2,4,6,8,10,12,14,16,18,20};
@@ -77,4 +80,5 @@ public class ArrayPlayground {
         }
         System.out.println("Минимальное число массива: " + randomArray[b]);
     }
+
 }
