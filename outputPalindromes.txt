@@ -1,0 +1,3 @@
+"moom" is palindrome 
+"100000001" is palindrome 
+"yura aruy" is palindrome 
