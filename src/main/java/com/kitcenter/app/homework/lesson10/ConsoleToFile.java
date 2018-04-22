@@ -16,11 +16,12 @@ public class ConsoleToFile {
     public static void writeToFile() throws IOException {
         Scanner input = new Scanner(System.in);
         fr = new FileWriter(outputFile,true);
-        switch (input.nextLine()){
+        String text = input.nextLine();
+        switch (text){
             case "exit":
                 break;
             default:
-                fr.write(input.nextLine() + "\n");
+                fr.write(text + "\n");
                 fr.close();
                 writeToFile();
         }
